@@ -17,6 +17,7 @@ public class EmployeeController {
 
     @GetMapping("/employee")
     public List<Employee> getAllEmployee() {
+        int a = 0;
         List<Employee> employees = repo.findAll();
         return employees;
     }
